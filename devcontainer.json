@@ -1,0 +1,15 @@
+ {
+    "name": "mongo Dev Container Playground",
+    "dockerComposeFile": "docker-compose.yml",
+	"service": "mongodb_playground",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "forwardPorts": [27017],
+    "customizations": {
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"mongodb.mongodb-vscode"
+			]
+		}
+	}
+  }
